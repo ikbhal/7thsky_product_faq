@@ -1,0 +1,63 @@
+<html>
+<head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" src="css/themes/green.css">
+        <script src="js/faq.js"></script>
+        <style>
+        .question {
+            font-size: 20px;
+            line-height: 150%;
+            color: #30ba67;
+            margin-top: 40px;
+        }
+        </style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    var faq = [
+    {
+        q: "Who is it for?",
+        a: "Recent college graduates, students taking gap year, dropouts, professionals looking to switch careers, anyone learning web development but needs right environment and guidance. No prior programming knowledge required."
+    },
+    {
+        q: "What is the duration of the program? Do I have to stay there for entire duration?",
+        a: "6 months, full-time. Yes, we need your commitment. Of course you can leave if you land a job before the end of the program"
+    }, 
+    {
+        q: "What is the cost of the program?",
+        a: "You don't pay anything until you get a job. If you get a job paying more than ₹50k/month then you give us 15% of your salary for 1 year. Maximum you pay us is ₹1.5 Lakhs."
+    }
+    ];
+$(document).ready(function(){
+  console.log(faq);
+  displayFaq();
+});
+
+function displayFaq() {
+    var q = "Q. Who is it for?";
+    var a = '<b>A.</b>Recent college graduates, students taking gap year, dropouts, professionals looking to switch careers, anyone learning web development but needs right environment and guidance. No prior programming knowledge required.';
+    var qelement = $("h3.question").html(q);
+    var aelemenet = $("p.answer").html(a);
+
+    //var containerDiv = '<div class="container"></div>';
+    //var faqsDiv = '<div class="faqs"></div>';
+    //var colDiv = '<div class="col-md-8 col-md-offset-2" id="faq_inner_container"></div>';
+    //$("body").append(container); 
+    //$(".container").append(faqsDiv); 
+    //$(".faqs").append(colDiv);
+    $("#faq_inner_container").append(qelement, aelemenet)
+}
+</script>
+</head>
+<body>
+    <div class="container">
+        <div class="faqs">
+            <div class="col-md-8 col-md-offset-2" id ="faq_inner_container">
+        
+            </div> 
+        </div>
+    </div>    
+</body>
+</html>

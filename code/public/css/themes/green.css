@@ -1,0 +1,21 @@
+h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 2.3300970873786406vw;
+    font-weight: 700;
+    line-height: 38px;
+}
+
+.faqs {
+    padding: 70px 0;
+}
+    
+.question {
+    font-size: 20px;
+    line-height: 150%;
+    color: #30ba67;
+    margin-top: 40px;
+}
+
+.question:first-child {
+    margin-top: 0;
+}
